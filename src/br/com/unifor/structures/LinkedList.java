@@ -11,12 +11,12 @@ public class LinkedList {
         this.numberOfElements = 0;
     }
 
-    public void addAtAnyPosition(int element, int position) {
+    public void addAtAnyPosition(Word word, int position) {
         if (position < 0 || position > this.numberOfElements) {
             throw new IndexOutOfBoundsException("Posição inválida");
         }
         if (position == 0) {
-            Node newNode = new Node(element);
+            Node newNode = new Node(word);
             if (this.first == null) {
                 this.last = newNode;
                 this.first = newNode;
@@ -26,7 +26,7 @@ public class LinkedList {
             }
             this.numberOfElements++;
         } else if (position == numberOfElements) {
-            Node newNode = new Node(element);
+            Node newNode = new Node(word);
             if (this.last == null) {
                 this.first = newNode;
                 this.last = newNode;
@@ -37,7 +37,7 @@ public class LinkedList {
             this.numberOfElements++;
 
         } else {
-            Node newNode = new Node(element);
+            Node newNode = new Node(word);
             Node currentlyNode = this.first;
             for (int i = 0; i < position - 1; i++) {
                 currentlyNode = currentlyNode.getNext();
@@ -85,7 +85,7 @@ public class LinkedList {
         Node currentNode = this.first;
         System.out.println("Lista: ");
         while (currentNode != null) {
-            System.out.print(currentNode.getElement() + " ");
+            System.out.print(currentNode.getWord() + " ");
             currentNode = currentNode.getNext();
         }
     }
