@@ -1,9 +1,12 @@
 package br.com.unifor.main;
 
+<<<<<<< Updated upstream
 import br.com.unifor.structures.DynamicQueue;
 import br.com.unifor.structures.LinkedList;
 import br.com.unifor.structures.Word;
 
+=======
+>>>>>>> Stashed changes
 public class Main {
     public static void main(String[] args) {
         DynamicQueue dynamicQueue = new DynamicQueue();
