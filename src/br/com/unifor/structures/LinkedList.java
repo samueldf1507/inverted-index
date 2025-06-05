@@ -55,11 +55,11 @@ public class LinkedList<T> {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        Node<T> current = this.start; // Usa 'current' para iterar e não modificar 'start'
+        Node<T> current = this.start;
         while (current != null) {
             sb.append(current.getElement());
             if (current.getNext() != null) {
-                sb.append(" "); // Adiciona um espaço se não for o último elemento
+                sb.append(" ");
             }
             current = current.getNext();
         }

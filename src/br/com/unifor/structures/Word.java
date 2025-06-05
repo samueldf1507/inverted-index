@@ -23,10 +23,6 @@ public class Word {
 
     @Override
     public String toString() {
-        // Este método depende DIRETAMENTE do toString() da LinkedList
-        // para imprimir as ocorrências no formato correto.
-        // Se a LinkedList.toString() retornar algo como "4 5 6",
-        // então este toString retornará "programming 4 5 6".
         return word + " " + occurrences.toString();
     }
 }
