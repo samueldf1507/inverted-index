@@ -1,0 +1,11 @@
+Operating systems manage computer hardware and software resources.
+They provide a foundation for application programs.
+A process is an instance of a computer program being executed.
+Threads are components of a process.
+Concurrency is a challenging aspect of modern operating systems design.
+Memory management involves allocating and deallocating memory space.
+Virtual memory is a technique that gives an application program the impression
+that it has contiguous working memory.
+Device drivers facilitate interaction between the operating system and hardware devices.
+Networking protocols are crucial for inter-computer communication.
+The kernel is the core component of an operating system.

@@ -11,6 +11,10 @@ public class LinkedList<T> {
         this.numberOfElements = 0;
     }
 
+    public Node<T> getStart() {
+        return start;
+    }
+
     public void printLinkedList() {
         Node<T> currentNo = this.start;
         System.out.println("Lista: ");
@@ -48,6 +52,20 @@ public class LinkedList<T> {
     public int getNumberOfElements() {
         return numberOfElements;
     }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        Node<T> current = this.start; // Usa 'current' para iterar e não modificar 'start'
+        while (current != null) {
+            sb.append(current.getElement());
+            if (current.getNext() != null) {
+                sb.append(" "); // Adiciona um espaço se não for o último elemento
+            }
+            current = current.getNext();
+        }
+        return sb.toString();
+    }
+
 }
 
 

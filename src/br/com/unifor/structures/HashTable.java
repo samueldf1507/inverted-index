@@ -3,13 +3,13 @@ package br.com.unifor.structures;
 import br.com.unifor.exceptions.WordOutOfRange;
 
 public class HashTable {
-    private BinarySearchTree[] hashTable;
+    private BinarySearchTree[] binarySearchTrees;
     private int size = 26;
 
     public HashTable() {
-        this.hashTable = new BinarySearchTree[size];
+        this.binarySearchTrees = new BinarySearchTree[size];
         for (int i = 0; i < size; i++) {
-            hashTable[i] = new BinarySearchTree();
+            binarySearchTrees[i] = new BinarySearchTree();
             
         }
     }
@@ -23,7 +23,7 @@ public class HashTable {
     public void insert(Word word) {
         int x = hashFunction(word.getWord());
         if (x >= 0 && x < size) {
-            hashTable[x].insert(word);
+            binarySearchTrees[x].insert(word);
         } else {
             throw new WordOutOfRange(word.getWord());
         }
@@ -32,7 +32,7 @@ public class HashTable {
     public Word search(String word) {
         int index = hashFunction(word);
         if (index >= 0 && index < size) {
-            return hashTable[index].search(word);
+            return binarySearchTrees[index].search(word);
         }
         return null;
     }
@@ -40,7 +40,7 @@ public class HashTable {
     public void printHashTable() {
         for (int i = 0; i < size; i++) {
             System.out.println(i + " ->\t");
-            hashTable[i].printInOrder();
+            binarySearchTrees[i].printInOrder();
         }
     }
 }
