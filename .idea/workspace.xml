@@ -26,6 +26,9 @@
       <change beforePath="$PROJECT_DIR$/src/br/com/unifor/structures/Node.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/unifor/structures/NodeABB.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/unifor/structures/Word.java" beforeDir="false" />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,13 +47,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/samueldf1507/inverted-index.git&quot;,
     &quot;accountId&quot;: &quot;b23e47fd-d717-4026-8e00-b88fa14a67c5&quot;
   }
 }</component>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -62,6 +71,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
@@ -71,6 +81,8 @@
     "onboarding.tips.debug.path": "C:/Users/Memel/IdeaProjects/inverted-index/src/Main.java",
     "run.code.analysis.last.selected.profile": "pProject Default"
 =======
+=======
+>>>>>>> Stashed changes
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.IndiceRemissivo.executor&quot;: &quot;Run&quot;,
@@ -88,6 +100,9 @@
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Memel/IdeaProjects/inverted-index/src/Main.java&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   }
 }</component>

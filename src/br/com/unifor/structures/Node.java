@@ -1,28 +1,27 @@
 package br.com.unifor.structures;
 
-public class Node {
-    private Word word;
-    private Node next;
+public class Node<T> {
+    private T element;
+    private Node<T> next;
 
-    public Node(Word word) {
-        this.word = word;
+    public Node(T element) {
+        this.element = element;
         this.next = null;
     }
 
-    public Word getWord() {
-
-        return word;
+    public T getElement() {
+        return element;
     }
 
-    public void setWord(Word word) {
-        this.word = word;
+    public void setElement(T element) {
+        this.element = element;
     }
 
-    public Node getNext() {
+    public Node<T> getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
+    public void setNext(Node<T> next) {
         this.next = next;
     }
 }
