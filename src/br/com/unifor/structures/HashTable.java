@@ -16,6 +16,7 @@ public class HashTable {
 
     private int hashFunction(String word) {
         char firstCharacter = Character.toLowerCase(word.charAt(0));
+        if (!Character.isLetter(firstCharacter)) return -1;
         return firstCharacter - 'a';
     }
 
