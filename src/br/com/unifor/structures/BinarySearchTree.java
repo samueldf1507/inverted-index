@@ -9,7 +9,6 @@ public class BinarySearchTree {
         this.root = null;
     }
 
-    // --- Métodos de Inserção ---
     private NodeABB insertRecursive(NodeABB currentNodeABB, Word word) {
         if (currentNodeABB == null) {
             return new NodeABB(word);
@@ -23,8 +22,6 @@ public class BinarySearchTree {
             currentNodeABB.setRight(insertRecursive(currentNodeABB.getRight(), word));
         } else {
             if (word.getOcurrences().getNumberOfElements() > 0) {
-                // Acessa o primeiro Node da LinkedList de ocorrências da 'word' de entrada
-                // e pega seu elemento (a linha) para adicionar à Word do nó da ABB.
                 if (word.getOcurrences().getStart() != null) {
                     currentNodeABB.getElement().addOcurrence((Integer) word.getOcurrences().getStart().getElement());
                 }
